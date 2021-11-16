@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Mvx Command</Title>
+      <Shortcut>mvxcmd</Shortcut>
+      <Author>Jared Allen</Author>
+      <Description>Define an Mxv command</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Windows.Input</Namespace>
+        </Import>
+        <Import>
+          <Namespace>MvvmCross.Commands</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>fieldName</ID>
+          <ToolTip>Replace with the field name</ToolTip>
+          <Default>fieldName</Default>
+        </Literal>
+        <Literal>
+          <ID>commandName</ID>
+          <ToolTip>Replace with the command name</ToolTip>
+          <Default>commandName</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[private ICommand _$fieldName$;
+        public ICommand $commandName$ => _$fieldName$ ??= new MvxCommand(() =>
+        {
+            // TODO: $commandName$ action
+            $end$
+        });]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

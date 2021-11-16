@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Xamarin.Forms BindableProperty</Title>
+      <Shortcut>xfbpropp</Shortcut>
+      <Author>Jared Allen</Author>
+      <Description>Define a Xamarin.Forms bindabe property with a property change handler and private backing store</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Xamarin.Forms</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>propertyName</ID>
+          <ToolTip>Replace with the property name</ToolTip>
+          <Default>propertyName</Default>
+        </Literal>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Replace with the property type</ToolTip>
+          <Default>type</Default>
+        </Literal>
+        <Literal>
+          <ID>fieldName</ID>
+          <ToolTip>Replace with the field name</ToolTip>
+          <Default>fieldName</Default>
+        </Literal>
+        <Literal>
+          <ID>bindingMode</ID>
+          <ToolTip>Replace with binding mode</ToolTip>
+          <Default>bindingMode</Default>
+        </Literal>
+        <Literal Editable="false">
+            <ID>className</ID>
+            <ToolTip>Replaced with enclosing class name</ToolTip>
+            <Function>ClassName()</Function>
+            <Default>className</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[#region $propertyName$ Property
+        private $type$ _$fieldName$ = ($type$) $propertyName$Property.DefaultValue;
+        
+        public static readonly BindableProperty $propertyName$Property = BindableProperty.Create(
+          propertyName: nameof($propertyName$),
+          returnType: typeof($type$),
+          declaringType: typeof($className$),
+          defaultValue: default($type$),
+          defaultBindingMode: BindingMode.$bindingMode$,
+          propertyChanged: (bindable, oldValue, newValue) =>
+          {
+            var typedBindble = ($className$) bindable;
+            var typedOldValue = ($type$) oldValue;
+            var typedNewValue = ($type$) newValue;
+
+            // Set private backing store
+            typedBindble._$fieldName$ = typedNewValue;
+            
+            // TODO: $propertyName$ property changed action
+            $end$
+          });
+          
+          public $type$ $propertyName$
+          {
+            get => ($type$) GetValue($propertyName$Property);
+            set => SetValue($propertyName$Property, value);
+          }
+        #endregion]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

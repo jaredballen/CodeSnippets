@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Xamarin.Forms Property</Title>
+      <Shortcut>xfprop</Shortcut>
+      <Author>Jared Allen</Author>
+      <Description>Define a Xamarin.Forms property</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Replace with the property type</ToolTip>
+          <Default>type</Default>
+        </Literal>
+        <Literal>
+          <ID>fieldName</ID>
+          <ToolTip>Replace with the field name</ToolTip>
+          <Default>fieldName</Default>
+        </Literal>
+        <Literal>
+          <ID>propertyName</ID>
+          <ToolTip>Replace with the property name</ToolTip>
+          <Default>propertyName</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[private $type$ _$fieldName$;
+        public $type$ $propertyName$
+        {
+          get => _$fieldName$;
+          set => SetProperty(ref _$fieldName$, value);
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
