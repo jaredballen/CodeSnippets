@@ -1,14 +1,244 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Shortcut/@EntryValue">xfaprop</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Description/@EntryValue">Xamarin Forms one-way bindable property</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Text/@EntryValue">#region $region$ Attached Property&#xD;
+public static readonly BindableProperty $propertyName$Property = BindableProperty.CreateAttached(&#xD;
+	propertyName: "$propertyName$",&#xD;
+	returnType: typeof($returnType$),&#xD;
+	declaringType: typeof($declaringType$),&#xD;
+	defaultValue: default($returnType$),&#xD;
+	defaultBindingMode: BindingMode.$bindingMode$);&#xD;
+&#xD;
+public static $returnType$ Get$propertyName$(BindableObject view)&#xD;
+	=&gt; ($returnType$)view.GetValue($propertyName$Property);&#xD;
+&#xD;
+public static void Set$propertyName$(BindableObject view, $returnType$ value)&#xD;
+	=&gt; view.SetValue($propertyName$Property, value);&#xD;
+#endregion&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/IsBlessed/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Categories/=Imported_002010_002F20_002F2021/@EntryIndexedValue">Imported 10/20/2021</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Categories/=Xamarin_0020Forms_0020C_0023/@EntryIndexedValue">Xamarin Forms C#</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Applicability/=Surround/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=propertyName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=propertyName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=returnType/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=returnType/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=declaringType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=declaringType/Expression/@EntryValue">typeRef()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=declaringType/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=bindingMode/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=bindingMode/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=region/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=region/Expression/@EntryValue">capitalize(propertyName)</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=region/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=76C606882F9D104EBDA8216D6FFC7355/Field/=region/Order/@EntryValue">4</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Shortcut/@EntryValue">xfapropp</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Description/@EntryValue">Xamarin Forms one-way bindable property</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Text/@EntryValue">#region $region$ Attached Property&#xD;
+public static readonly BindableProperty $propertyName$Property = BindableProperty.CreateAttached(&#xD;
+	propertyName: "$propertyName$",&#xD;
+	returnType: typeof($returnType$),&#xD;
+	declaringType: typeof($declaringType$),&#xD;
+	defaultValue: default($returnType$),&#xD;
+	defaultBindingMode: BindingMode.$bindingMode$,&#xD;
+	propertyChanged: (bindable, oldValue, newValue) =&gt;&#xD;
+	{&#xD;
+		var typedBindable = ($declaringType$) bindable;&#xD;
+        var typedOldValue = ($returnType$) oldValue;&#xD;
+        var typedNewValue = ($returnType$) newValue;&#xD;
+				&#xD;
+		// TODO: $propertyName$ property changed action&#xD;
+	});&#xD;
+&#xD;
+public static $returnType$ Get$propertyName$(BindableObject view)&#xD;
+	=&gt; ($returnType$)view.GetValue($propertyName$Property);&#xD;
+&#xD;
+public static void Set$propertyName$(BindableObject view, $returnType$ value)&#xD;
+	=&gt; view.SetValue($propertyName$Property, value);&#xD;
+#endregion&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/IsBlessed/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Categories/=Imported_002010_002F20_002F2021/@EntryIndexedValue">Imported 10/20/2021</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Categories/=Xamarin_0020Forms_0020C_0023/@EntryIndexedValue">Xamarin Forms C#</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Applicability/=Surround/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=propertyName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=propertyName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=returnType/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=returnType/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=declaringType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=declaringType/Expression/@EntryValue">typeRef()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=declaringType/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=bindingMode/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=bindingMode/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=region/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=region/Expression/@EntryValue">capitalize(propertyName)</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=region/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=023C87778F95F345B6C1D056B38F4669/Field/=region/Order/@EntryValue">4</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Shortcut/@EntryValue">xfbprop</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Description/@EntryValue">Xamarin Forms one-way bindable property</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Text/@EntryValue">#region $region$ Property&#xD;
+public static readonly BindableProperty $propertyName$Property = BindableProperty.Create(&#xD;
+	propertyName: nameof($propertyName$),&#xD;
+	returnType: typeof($returnType$),&#xD;
+	declaringType: typeof($declaringType$),&#xD;
+	defaultValue: default($returnType$),&#xD;
+	defaultBindingMode: BindingMode.$bindingMode$);&#xD;
+&#xD;
+public $returnType$ $propertyName$&#xD;
+{&#xD;
+	get =&gt; ( $returnType$ )GetValue($propertyName$Property);&#xD;
+	set =&gt; SetValue($propertyName$Property, value);&#xD;
+}&#xD;
+#endregion&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/IsBlessed/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Categories/=Imported_002010_002F20_002F2021/@EntryIndexedValue">Imported 10/20/2021</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Categories/=Imported_00203_002F21_002F2019/@EntryIndexedValue">Imported 3/21/2019</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Categories/=Xamarin_0020Forms_0020C_0023/@EntryIndexedValue">Xamarin Forms C#</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Applicability/=Surround/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=propertyName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=propertyName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=returnType/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=returnType/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=declaringType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=declaringType/Expression/@EntryValue">typeRef()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=declaringType/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=bindingMode/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=bindingMode/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=region/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=region/Expression/@EntryValue">capitalize(propertyName)</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=region/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=26B1A06568A4A74C93BB8F0E1FB240F1/Field/=region/Order/@EntryValue">4</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Shortcut/@EntryValue">xfbpropp</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Description/@EntryValue">Xamarin Forms one-way bindable property</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Text/@EntryValue">#region $region$ Property&#xD;
+private $returnType$ _$lowercasePropertyName$ = ($returnType$) $propertyName$Property.DefaultValue;&#xD;
+public static readonly BindableProperty $propertyName$Property = BindableProperty.Create(&#xD;
+	propertyName: nameof($propertyName$),&#xD;
+	returnType: typeof($returnType$),&#xD;
+	declaringType: typeof($declaringType$),&#xD;
+	defaultValue: default($returnType$),&#xD;
+	defaultBindingMode: BindingMode.$bindingMode$,&#xD;
+	propertyChanged: (bindable, oldValue, newValue) =&gt;&#xD;
+	{&#xD;
+		var typedBindable = ($declaringType$) bindable;&#xD;
+        var typedOldValue = ($returnType$) oldValue;&#xD;
+        var typedNewValue = ($returnType$) newValue;&#xD;
+&#xD;
+		typedBindable._$lowercasePropertyName$ = typedNewValue;&#xD;
+&#xD;
+		// TODO: $propertyName$ property changed action&#xD;
+	});&#xD;
+&#xD;
+public $returnType$ $propertyName$&#xD;
+{&#xD;
+	get =&gt; ( $returnType$ )GetValue($propertyName$Property);&#xD;
+	set =&gt; SetValue($propertyName$Property, value);&#xD;
+}&#xD;
+#endregion&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/IsBlessed/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Categories/=Imported_002010_002F20_002F2021/@EntryIndexedValue">Imported 10/20/2021</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Categories/=Xamarin_0020Forms_0020C_0023/@EntryIndexedValue">Xamarin Forms C#</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Applicability/=Surround/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=propertyName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=propertyName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=returnType/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=returnType/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=declaringType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=declaringType/Expression/@EntryValue">typeRef()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=declaringType/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=declaringType/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=bindingMode/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=bindingMode/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=region/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=region/Expression/@EntryValue">capitalize(propertyName)</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=region/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=region/Order/@EntryValue">4</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=lowercasePropertyName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=lowercasePropertyName/Expression/@EntryValue">decapitalize(propertyName)</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=lowercasePropertyName/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=19A261B5BAD19F4CA502F2D8BA174D61/Field/=lowercasePropertyName/Order/@EntryValue">5</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Shortcut/@EntryValue">xfcmd</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Description/@EntryValue">Xamarin Forms command property</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Text/@EntryValue">private ICommand _$lowercase_name$;&#xD;
+public ICommand $name$ =&gt; _$lowercase_name$ ??= new Command(() =&gt;&#xD;
+{&#xD;
+    // TODO: $name$ action&#xD;
+});</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Categories/=Imported_002010_002F20_002F2021/@EntryIndexedValue">Imported 10/20/2021</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Categories/=Xamarin_0020Forms_0020C_0023/@EntryIndexedValue">Xamarin Forms C#</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Field/=name/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Field/=name/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Field/=lowercase_005Fname/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Field/=lowercase_005Fname/Expression/@EntryValue">decapitalize(name)</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Field/=lowercase_005Fname/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ECD8D15EA9C894B8508794E99FB0112/Field/=lowercase_005Fname/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Shortcut/@EntryValue">xfcmdt</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Description/@EntryValue">Xamarin Forms command property</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Text/@EntryValue">private ICommand _$lowercase_name$;&#xD;
+public ICommand $name$ =&gt; _$lowercase_name$ ??= new Command&lt;$type$&gt;(($type$ arg) =&gt;&#xD;
+{&#xD;
+    // TODO: $name$ action&#xD;
+});</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Categories/=Imported_002010_002F20_002F2021/@EntryIndexedValue">Imported 10/20/2021</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Categories/=Xamarin_0020Forms_0020C_0023/@EntryIndexedValue">Xamarin Forms C#</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Field/=name/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Field/=name/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Field/=lowercase_005Fname/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Field/=lowercase_005Fname/Expression/@EntryValue">decapitalize(name)</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Field/=lowercase_005Fname/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Field/=lowercase_005Fname/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Field/=type/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=933F8632285E7047BCABD0497D495CBB/Field/=type/Order/@EntryValue">2</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Shortcut/@EntryValue">xfprop</s:String>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Description/@EntryValue">Xamarin Forms property</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Description/@EntryValue">Xamarin Forms bindable property</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Text/@EntryValue">private $type$ _$lowercase_name$;&#xD;
 public $type$ $name$&#xD;
 {&#xD;
 	get =&gt; _$lowercase_name$;&#xD;
 	set =&gt; 	SetProperty(ref _$lowercase_name$, value);&#xD;
 }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Reformat/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Categories/=Imported_002010_002F20_002F2021/@EntryIndexedValue">Imported 10/20/2021</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Categories/=Imported_00203_002F21_002F2019/@EntryIndexedValue">Imported 3/21/2019</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Categories/=Xamarin_0020Forms_0020C_0023/@EntryIndexedValue">Xamarin Forms C#</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=40CEC96EC5D8AD48886CC32970380F4B/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
