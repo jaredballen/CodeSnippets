@@ -5,7 +5,7 @@
       <Title>Xamarin.Forms BindableProperty</Title>
       <Shortcut>xfbpropp</Shortcut>
       <Author>Jared Allen</Author>
-      <Description>Define a Xamarin.Forms bindabe property with a property change handler and private backing store</Description>
+      <Description>Define a Xamarin.Forms bindable property with a property change handler and private backing store</Description>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
@@ -56,12 +56,12 @@
           defaultBindingMode: BindingMode.$bindingMode$,
           propertyChanged: (bindable, oldValue, newValue) =>
           {
-            var typedBindble = ($className$) bindable;
+            var typedBindable = ($className$) bindable;
             var typedOldValue = ($type$) oldValue;
             var typedNewValue = ($type$) newValue;
 
             // Set private backing store
-            typedBindble._$fieldName$ = typedNewValue;
+            typedBindable._$fieldName$ = typedNewValue;
             
             // TODO: $propertyName$ property changed action
             $end$
